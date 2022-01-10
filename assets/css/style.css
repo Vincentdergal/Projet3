@@ -1,3 +1,23 @@
+h1{
+    text-align: center;
+}
+header{
+    text-align: center;
+    flex-wrap: wrap;
+}
+.RechercheVille{
+    background-color: grey;
+    height: 30px;
+}
+.inputVille{
+    align-items: center;
+    border: hidden;
+    background-color: grey;
+    height: 25px;
+}
+.explorerNosRest{
+
+}
 body{
     margin: 0;
 }
@@ -6,6 +26,33 @@ footer{
     color: white;
 }
 .img{
-    height: 50px;
-    width: 50px;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+.Fonct{
+background-color: grey;
+align-items: center;
+}
+.ElementFonctionnement{
+    width: 250px;    
+    border: 2px solid black;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    margin: 5px;
+
+}
+.Resto{
+background-color: blue;
+}
+.ElementResto{
+    width: 250px;
+    border: 2px solid black;
+    display: column;
+    margin: 25px;
+}
+Footer{
+    display: flex;
 }
