@@ -16,43 +16,52 @@ header{
     height: 25px;
 }
 .explorerNosRest{
+    padding: 20px;
+    border-radius: 10%;
 
 }
 body{
     margin: 0;
 }
-footer{
-    background-color: grey;
-    color: white;
-}
 .img{
     height: 50%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10% 10% 0 0;
 }
 .Fonct{
 background-color: grey;
 align-items: center;
+margin: 15px;
 }
 .ElementFonctionnement{
-    width: 250px;    
+    width: 75%;    
     border: 2px solid black;
+    border-radius: 40%;
     align-items: center;
     display: flex;
     padding: 5px;
     justify-content: space-between;
-    margin: 5px;
-
+    margin: 20px;
 }
 .Resto{
 background-color: blue;
+align-items: center;
+margin: 15px;
 }
 .ElementResto{
-    width: 250px;
+    width: 75%;
     border: 2px solid black;
+    border-radius: 10%;
     display: column;
-    margin: 25px;
+    margin: 30px;
 }
-Footer{
+.footer{
+    display: column;
+}
+.FooterRestau{
+    display: flex;
+}
+.FooterPartenaire{
     display: flex;
 }
