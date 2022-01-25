@@ -1,9 +1,11 @@
-h1{
+.logo{
     text-align: center;
+    max-width: 168px;
 }
 header{
     text-align: center;
     flex-wrap: wrap;
+    background-color:#F6F6F6 ;
 }
 .RechercheVille{
     background-color: grey;
@@ -18,7 +20,6 @@ header{
 .explorerNosRest{
     padding: 20px;
     border-radius: 10%;
-
 }
 body{
     margin: 0;
@@ -29,35 +30,58 @@ body{
     object-fit: cover;
     border-radius: 10% 10% 0 0;
 }
+h1{
+margin: 0 0 20px 20px;
+}
 .Fonct{
-background-color: grey;
+background-color: white;
 align-items: center;
-margin: 15px;
+
 }
 .ElementFonctionnement{
-    width: 75%;    
-    border: 2px solid black;
-    border-radius: 40%;
-    align-items: center;
     display: flex;
-    padding: 5px;
-    justify-content: space-between;
-    margin: 20px;
+    margin: 0 20px 20px 40px;
+  font-weight: bold;
+  background-color: #F6F6F6;
+  padding: 30px 50px 30px 18px;
+  text-align: center;
+  border-radius: 20px;
+  width: 300px;
+  height: 58px;
 }
 .Resto{
-background-color: blue;
+background-color: #f6f6f6;
 align-items: center;
-margin: 15px;
+}
+.RestoConteneur{
+    display: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .ElementResto{
-    width: 75%;
-    border: 2px solid black;
-    border-radius: 10%;
-    display: column;
-    margin: 30px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 18px;
+    max-width: 280px;
+    display:column;
+    margin-left: 15%;
+}
+.ImgResto{
+width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
 }
 .footer{
-    display: column;
+    background-color: #353535;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 0px;
+    max-width: 100%;
+    min-width: 320px;
 }
 .FooterRestau{
     display: flex;
