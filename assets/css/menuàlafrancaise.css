@@ -10,46 +10,84 @@ body{
     padding-bottom: 20px;
   }
   .ImgBackground{
-    max-width: 100%;
-    max-height: 500px;
     width: 100%;
+    height: 400px;
     object-fit: cover;
     z-index: 0;
+    position: absolute;
+}
+h3{
+    padding-left: 10px;
 }
 .TitreMenu{
-margin-top: -30px;
-background-color: royalblue;
+margin-top: 317px;
+background-color: #f6f6f6;
 z-index: 1;
-border-radius: 50px 50px 0 0;
+border-radius: 30px 30px 0px 0px ;
 padding: 20px 20px 20px 20px;
+position: relative;
 }
 main{
-    background-color: sandybrown;
+    background-color: #f6f6f6;
 }
 .prix{
+    font-weight: 700;
     display: flex;
+    align-items: flex-end;
+    padding-left: 8px;
+}
+.divEntrées{
+    justify-content: space-between;
+    padding: 10px;
 }
 .ElementsEntrées{
     background-color: #fff;
-    padding: 1rem;
+    padding: 16px;
     display: flex;
-    flex-direction: column;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
+    border-radius: 12px;
+    margin: 16px 0px;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
+}
+.DescriptionEntrées{
+    width: 300px;
+}
+.divPlats{
+    justify-content: space-between;
+    padding: 10px;
 }
 .ElementsPlats{
     background-color: #fff;
-    padding: 1rem;
+    padding: 16px;
     display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
+    border-radius: 12px;
+    margin: 16px 0px;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
 }
-.ElementsDesserts{
+.DescriptionPlats{
+    width: 300px;
+}
+.divDesserts{
+    justify-content: space-between;
+    padding: 10px;
+}
+.ElementsDesserts {
     background-color: #fff;
-    padding: 1rem;
+    padding: 16px;
     display: flex;
-    border-radius: 0.75rem;
-    margin: 1rem 0;
+    border-radius: 12px;
+    margin: 16px 0px;
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
+}
+.DescriptionDesserts{
+    width: 300px;
+}
+.Commander{
+    padding: 10px 40px 10px 40px;
+    border-radius: 100px;
+    color: #FFF;
+    border: 0;
+    margin: 20px 0px 50px 130px;
+    background: linear-gradient(#FF79DA,#9356DC);
 }
 .footer {
     background-color: #353535;
