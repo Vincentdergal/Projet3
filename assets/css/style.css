@@ -14,7 +14,7 @@ header {
 
 .RechercheVille {
   display: flex;
-    background-color: #f3f3f3;
+    background-color: rgb(219, 217, 217);
     height: 45px;
     justify-content: center;
 }
@@ -22,7 +22,7 @@ header {
 .inputVille {
   align-items: center;
   border: hidden;
-  background-color: grey;
+  background-color: rgb(219, 217, 217);
   padding: 9px;
 }
 .fa-map-marker-alt{
@@ -85,6 +85,7 @@ h2{
   padding: 20px
   text-align: center;
   border-radius: 20px;
+  box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
 }
 .Resto {
   background-color: #f6f6f6;
@@ -100,7 +101,6 @@ h2{
 
 .ElementResto {
   border-radius: 20px;
-  background-color: ;
   margin: 0px 15px 18px 15px;
   width: auto;
 }
@@ -139,6 +139,26 @@ h3{
 }
 .FooterPartenaire {
   display: flex;
+}
+@media screen and (min-width: 1024px){
+  ol{
+    display: flex;
+    justify-content: space-around;
+  }
+  .RestoConteneur {
+    display: flex;
+    flex-direction:row-reverse ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .ElementResto {
+    border-radius: 20px;
+    margin: 0px 15px 18px 15px;
+    width: 45%;
+  }
+  li{
+    background-color: white;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
