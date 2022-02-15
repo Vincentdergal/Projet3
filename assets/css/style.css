@@ -5,7 +5,9 @@
   text-align: center;
   width: 168px;
 }
-
+p{ 
+  font-family:Roboto,sans-serif;
+}
 header {
   text-align: center;
   flex-wrap: wrap;
@@ -36,11 +38,12 @@ header {
   border: 0;
   background: linear-gradient(#FF79DA,#9356DC);
 }
-
-body {
+.explorerNosRest:active {
+  border: 1px outset black;
+}
+  body {
   margin: 0;
 }
-
 .img {
   height: 50%;
   width: 100%;
@@ -52,22 +55,29 @@ h1 {
   margin: 0 0 20px 20px;
   padding-top: 15px;
   font-size: 25px;
+  font-family: Shrikhand,sans-serif;
 }
-
+h4{
+  font-family: Shrikhand,sans-serif;
+}
 .Fonct {
   background-color: white;
   align-items: center;
   font-size: 16px;
 }
-li{
-  list-style: none;
-}
+ol {list-style: none; counter-reset: li}
+li::before {content: counter(li); color: red;
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+li {counter-increment: li}
+
 h2{
   display: flex;
   font-size: 16px;
   justify-content: center;
   align-items: center;
   padding-left: 15px;
+  font-family:Roboto,sans-serif;
 }
 .fa-mobile-alt{
   padding: 12px;
@@ -113,6 +123,7 @@ h2{
 }
 h3{
   padding-left: 10px;
+  font-family:Roboto,sans-serif;
 }
 .TexteResto{
   padding-left: 10px;
