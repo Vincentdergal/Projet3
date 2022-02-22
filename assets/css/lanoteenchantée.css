@@ -10,6 +10,15 @@ body{
     text-align: center;
     padding-bottom: 20px;
   }
+  .fa-arrow-left{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #000;
+    top: 0%;
+  }
   .ImgBackground{
     width: 100%;
     height: 400px;
@@ -17,6 +26,32 @@ body{
     z-index: 0;
     position: absolute;
 }
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #9356DC;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    animation-fill-mode: forwards;
+  }
+  @keyframes spin {
+    0% { 
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(180deg);
+      opacity:0.5;
+    }
+    100% { 
+      transform: rotate(360deg);
+       opacity: 0;
+       display: none;
+    }
+  }
 p{
     font-family:Roboto,sans-serif;
 }
@@ -55,7 +90,19 @@ main{
     border-radius: 12px;
     margin: 16px 0px;
     box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
-}
+    animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5,1.58,0.34,0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+    }
+    @keyframes itemAppear { 
+        0% {
+        transform: scale(0);
+          }
+        100% {
+          transform: scale(1);
+          }
+        }
 .DescriptionEntrées{
     width: 300px;
 }
@@ -70,7 +117,19 @@ main{
     border-radius: 12px;
     margin: 16px 0px;
     box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
-}
+    animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5,1.58,0.34,0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+    }
+    @keyframes itemAppear { 
+        0% {
+        transform: scale(0);
+          }
+        100% {
+          transform: scale(1);
+          }
+        }
 .DescriptionPlats{
     width: 300px;
 }
@@ -85,7 +144,19 @@ main{
     border-radius: 12px;
     margin: 16px 0px;
     box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
-}
+    animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5,1.58,0.34,0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+    }
+    @keyframes itemAppear { 
+        0% {
+        transform: scale(0);
+          }
+        100% {
+          transform: scale(1);
+          }
+        }
 .DescriptionDesserts{
     width: 300px;
 }
