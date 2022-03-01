@@ -3,16 +3,36 @@
 }
 
 .loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: loaderback 4s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  background-color: #353535;
+  opacity: 0.7;
+  z-index: 1000;
+}
+
+@keyframes loaderback {
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
+}
+.loaderitems {
   border: 16px solid #f3f3f3;
   border-top: 16px solid #9356DC;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 2s linear;
-  position: absolute;
-  left: 30%;
-  top: 30%;
+  animation: spin 4s linear;
+  position: fixed;
+  left: 35%;
+  top: 35%;
   animation-fill-mode: forwards;
+  z-index: 1000;
 }
 
 @keyframes spin {
@@ -72,8 +92,13 @@ header {
   cursor: pointer;
 }
 
-.explorerNosRest:active {
-  border: 1px outset black;
+.explorerNosRest:hover {
+  font-size: 17px;
+  cursor: pointer;
+  padding: 16px 16px;
+  transition-property: transform;
+  transition-duration: 400ms;
+  transform: scale(1.15);
 }
 
 body {
@@ -122,6 +147,7 @@ li::before {
   color: #fff;
   position: absolute;
   bottom: 26%;
+  z-index: 10;
 }
 
 li {
@@ -157,6 +183,7 @@ h2 {
   text-align: center;
   border-radius: 20px;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .Resto {
@@ -187,6 +214,7 @@ h2 {
   border-radius: 20px;
   margin: 0px 15px 18px 15px;
   width: auto;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .ImgResto {
@@ -234,7 +262,7 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
-  .loader {
+  .loaderitems {
     position: absolute;
     left: 45%;
     top: 45%;
