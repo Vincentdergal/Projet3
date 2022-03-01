@@ -129,6 +129,7 @@ li::before {content: counter(li); color: #fff;
   position: absolute;
   bottom: 26%;
   z-index: 10;
+  top: 57%;
 }
 li {counter-increment: li}
 
@@ -188,6 +189,7 @@ transform: scale(0);
   margin: 0px 15px 18px 15px;
   width: auto;
   box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
+  position: relative;
 }
 .ImgResto {
   width: 100%;
@@ -202,6 +204,11 @@ h3{
 .TexteResto{
   padding-left: 10px;
   padding-bottom: 10px;
+}
+.fa-heart{
+  position: absolute;
+  top: 78%;
+  left: 85%;
 }
 .footer {
   background-color: #353535;
@@ -248,6 +255,11 @@ h3{
     border-radius: 20px;
     margin: 0px 15px 18px 15px;
     width: 45%;
+  }
+  .fa-heart{
+    position: absolute;
+    top: 75%;
+    left: 90%;
   }
   li{
     background-color: white;

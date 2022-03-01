@@ -1,40 +1,41 @@
 body{
-    margin: 0;
-    width: 100%;
+  margin: 0;
+  width: 100%;
 }
 .logo {
-    text-align: center;
-    max-width: 168px;
-  }
-  header{
-    text-align: center;
-    padding-bottom: 20px;
-  }
-  .fa-arrow-left{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    color: #000;
-    top: 0%;
-  }
-  .ImgBackground{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    z-index: 0;
-    position: absolute;
+  text-align: center;
+  max-width: 168px;
+}
+header{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.fa-arrow-left{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #000;
+  top: 0%;
+  left: 0%;
+}
+.ImgBackground{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  z-index: 0;
+  position: absolute;
 }
 p{
-    font-family:Roboto,sans-serif;
+  font-family:Roboto,sans-serif;
 }
 h1{
-    font-family: Shrikhand,sans-serif;
+  font-family: Shrikhand,sans-serif;
 }
 h2{
-    padding-left: 10px;
-    font-family: Shrikhand,sans-serif;
+  padding-left: 10px;
+  font-family: Shrikhand,sans-serif;
 }
 .TitreMenu{
 margin-top: 317px;
@@ -45,26 +46,27 @@ padding: 20px 20px 20px 20px;
 position: relative;
 }
 main{
-    background-color: #f6f6f6;
+  background-color: #f6f6f6;
 }
 .prix{
-    font-weight: 700;
-    display: flex;
-    align-items: flex-end;
-    padding-left: 8px;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 8px;
 }
 .divEntrées{
-    justify-content: space-between;
-    padding: 10px;
+  justify-content: space-between;
+  padding: 10px;
 }
 .ElementsEntrées{
-    background-color: #fff;
-    padding: 16px;
-    display: flex;
-    border-radius: 12px;
-    margin: 16px 0px;
-    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
-    animation: itemAppear 0.6s;
+  background-color: #fff;
+  padding: 16px;
+  width: 80%;
+  display: flex;
+  border-radius: 12px;
+  margin: 16px 0px;
+  box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
+  animation: itemAppear 0.6s;
   animation-timing-function: cubic-bezier(0.5,1.58,0.34,0.82);
   animation-fill-mode: both;
   transform: scale(0);
@@ -78,20 +80,20 @@ main{
           }
         }
 .DescriptionEntrées{
-    width: 300px;
+  width: 300px;
 }
 .divPlats{
-    justify-content: space-between;
-    padding: 10px;
+  justify-content: space-between;
+  padding: 10px;
 }
 .ElementsPlats{
-    background-color: #fff;
-    padding: 16px;
-    display: flex;
-    border-radius: 12px;
-    margin: 16px 0px;
-    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
-    animation: itemAppear 2.5s;
+  background-color: #fff;
+  width: 80%;
+  padding: 16px;
+  display: flex;
+  border-radius: 12px;
+  margin: 16px 0px;
+  animation: itemAppear 2.5s;
   animation-timing-function: cubic-bezier(0.5,1.58,0.34,0.82);
   animation-fill-mode: both;
   transform: scale(0);
@@ -105,93 +107,109 @@ main{
           }
         }
 .DescriptionPlats{
-    width: 300px;
+  width: 300px;
 }
 .divDesserts{
-    justify-content: space-between;
-    padding: 10px;
+  justify-content: space-between;
+  padding: 10px;
 }
-.ElementsDesserts{
+.ElementsDesserts {
   background-color: #fff;
+  width: 80%;
   padding: 16px;
   display: flex;
   border-radius: 12px;
   margin: 16px 0px;
   box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
-  animation: itemAppear 4.5s;
-animation-timing-function: cubic-bezier(0.5,1.58,0.34,0.82);
-animation-fill-mode: both;
-transform: scale(0);
-  }
-  @keyframes itemAppear { 
-      0% {
-      transform: scale(0);
+  animation: itemAppear 4s;
+  animation-timing-function: cubic-bezier(0.5,1.58,0.34,0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+    }
+    @keyframes itemAppear { 
+        0% {
+        transform: scale(0);
+          }
+        100% {
+          transform: scale(1);
+          }
         }
-      100% {
-        transform: scale(1);
-        }
-      }
 .DescriptionDesserts{
-    width: 300px;
+  width: 300px;
 }
 .Commander{
-    padding: 10px 40px 10px 40px;
-    border-radius: 100px;
-    color: #FFF;
-    border: 0;
-    margin: 20px 0px 50px 130px;
-    background: linear-gradient(#FF79DA,#9356DC);
+padding: 10px 40px 10px 40px;
+border-radius: 100px;
+color: #FFF;
+border: 0;
+margin: 20px 0px 50px 130px;
+background: linear-gradient(#FF79DA,#9356DC);
 }
 .Commander:hover {
-  font-size: 17px;
-  cursor: pointer;
-  padding: 10px 40px;
-  transition-property: transform;
-  transition-duration: 400ms;
-  transform: scale(1.15);
+font-size: 17px;
+cursor: pointer;
+padding: 10px 40px;
+transition-property: transform;
+transition-duration: 400ms;
+transform: scale(1.15);
 }
 .footer {
-    background-color: #353535;
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 25px 0px 0px 10px;
-    max-width: 100%;
-    min-width: 320px;
-    margin-top: 20px;
+background-color: #353535;
+color: #FFF;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 25px 0px 0px 10px;
+max-width: 100%;
+min-width: 320px;
+margin-top: 20px;
+}
+.fa-utensils{
+  position: relative;
+  padding: 15px 10px 0px 5px;
+}
+.fa-hands-helping{
+  padding: 15px 10px 0px 5px;
+}
+.FooterRestau {
+  display: flex;
+}
+.FooterPartenaire {
+  display: flex;
+}
+@media screen and (min-width: 1024px){
+  .TitreMenu{
+      text-align: center;
+  }  
+  .CompletMenu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ElementsEntrées{
+      background-color: #fff;
+      padding: 16px;
+      display: flex;
+      border-radius: 12px;
+      margin: 16px 0px;
+      box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
+          }
+    .ElementsPlats{
+      background-color: #fff;
+      padding: 16px;
+      display: flex;
+      border-radius: 12px;
+      margin: 16px 0px;
+      box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
   }
-  .fa-utensils{
-    position: relative;
-    padding: 15px 10px 0px 5px;
+    .ElementsDesserts{
+      background-color: #fff;
+      padding: 16px;
+      display: flex;
+      border-radius: 12px;
+      margin: 16px 0px;
+      box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
   }
-  .fa-hands-helping{
-    padding: 15px 10px 0px 5px;
-  }
-  .FooterRestau {
-    display: flex;
-  }
-  .FooterPartenaire {
-    display: flex;
-  }
-  @media screen and (min-width: 1024px){
-    .TitreMenu{
-        text-align: center;
-    }  
-    .CompletMenu{
-          display: flex;
-          justify-content: space-between;
-      }
-      .ElementsEntrées{
-          width: 33%;
-      }
-      .ElementsPlats{
-          width: 33%;
-      }
-      .ElementsDesserts{
-          width: 33%;
-      }
-      .Commander{
-          margin: 0% 40%;
-      }
-  }
+    .Commander{
+        margin: 0% 40%;
+    }
+}
