@@ -101,7 +101,6 @@ header {
   object-fit: cover;
   border-radius: 10% 10% 0 0;
 }
-
 h1 {
   margin: 0 0 20px 20px;
   padding-top: 15px;
@@ -126,10 +125,11 @@ li::before {content: counter(li); color: #fff;
   justify-content: center;
   align-items: center;
   color: #fff;
-  position: absolute;
-  bottom: 26%;
   z-index: 10;
-  top: 43%;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: -73px;
+  left: -7px;
 }
 li {counter-increment: li}
 
@@ -159,7 +159,6 @@ h2{
   text-align: center;
   border-radius: 20px;
   box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
-  position: relative;
 }
 .Resto {
   background-color: #f6f6f6;
@@ -220,11 +219,11 @@ h3{
 }
 .animationcoeur:hover {
   background: linear-gradient(180deg, $colorPrimaire, $colorSecondaire);
-  font-weight: 800;
+  font-weight: bolder;
   animation-duration: 3s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
   animation: coeur 1s;
-  background-clip: border-box;
+  background-clip: padding-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -249,7 +248,7 @@ h3{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px 0px 0px 10px;
+  padding: 25px 0px 0px 0px;
   width: 100%;
 }
 .fa-utensils{
@@ -276,7 +275,7 @@ h3{
     justify-content: space-around;
   }
   li::before{
-    bottom: 54%; 
+    bottom: -50%;
   }
   .RestoConteneur {
     display: flex;
@@ -293,4 +292,5 @@ li{
     background-color: white;
   }
 }
-/*# sourceMappingURL=style.css.map *
+
+/*# sourceMappingURL=style.css.map */
