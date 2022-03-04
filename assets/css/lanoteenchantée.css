@@ -336,6 +336,7 @@ transition-property: transform;
 transition-duration: 400ms;
 transform: scale(1.15);
 }
+
 .footer {
 background-color: #353535;
 color: #FFF;
