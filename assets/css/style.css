@@ -113,11 +113,12 @@ h1 {
   margin: 0 0 20px 20px;
   padding-top: 15px;
   font-size: 25px;
-  font-family: Shrikhand, sans-serif;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
 }
 
 h4 {
-  font-family: Shrikhand, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .Fonct {
@@ -204,6 +205,7 @@ h2 {
   animation-timing-function: linear;
   animation-fill-mode: both;
   transform: scale(0);
+  padding-bottom: 40px;
 }
 
 @keyframes itemAppear {
@@ -253,6 +255,7 @@ h3 {
   padding-left: 10px;
   padding-bottom: 10px;
   color: black;
+  margin-top: -13px;
 }
 
 .fa-heart {
