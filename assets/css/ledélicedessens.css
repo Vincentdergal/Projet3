@@ -118,7 +118,7 @@ position: relative;
 p{
   font-family:Roboto,sans-serif;
 }
-h1{
+h1, h3{
   font-family: Shrikhand,sans-serif;
 }
 h2{
@@ -126,6 +126,7 @@ h2{
   font-family: Roboto,sans-serif;
   text-decoration: underline #99E2D0;
 }
+
 h4{
   font-family:Roboto,sans-serif;
   font-size: large;
@@ -152,8 +153,8 @@ p{
   animation-timing-function: linear;
   animation: coeur 1s;
   background-clip: padding-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-file-color: transparent;
 }
 @keyframes coeur {
   0% {
@@ -381,7 +382,6 @@ margin-top: 20px;
     }
     .ElementsEntrées{
       background-color: #fff;
-      padding: 16px;
       display: flex;
       border-radius: 12px;
       margin: 16px 0px;
@@ -389,7 +389,7 @@ margin-top: 20px;
           }
     .ElementsPlats{
       background-color: #fff;
-      padding: 16px;
+      
       display: flex;
       border-radius: 12px;
       margin: 16px 0px;
@@ -397,7 +397,7 @@ margin-top: 20px;
   }
     .ElementsDesserts{
       background-color: #fff;
-      padding: 16px;
+      
       display: flex;
       border-radius: 12px;
       margin: 16px 0px;
