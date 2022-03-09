@@ -17,7 +17,7 @@ main{
   justify-content: center;
   font-size: 26px;
   color: #000;
-  top: 4%;
+  top: 3%;
   left: 5%;
 }
 header{
@@ -132,15 +132,14 @@ h4{
   font-size: large;
   margin-bottom: -6px;
 }
-p{
-  font-size: smaller;
-}
+
 .fa-heart {
   position: absolute;
-  top: 44%;
-  right: 5%;
+  top: 68%;
+  left: 88%;
   font-size: 30px;
-  z-index: 5;
+  color: black;
+  z-index: 10;
 }
 .animationcoeur {
   transition-delay: 0.01s;
@@ -153,8 +152,8 @@ p{
   animation-timing-function: linear;
   animation: coeur 1s;
   background-clip: padding-box;
-  background-clip: text;
-  text-file-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @keyframes coeur {
   0% {
@@ -329,12 +328,13 @@ margin-right: 0px;
  
 }
 .Commander{
-padding: 10px 40px 10px 40px;
+padding: 25px 55px 25px 55px;
 border-radius: 100px;
 color: #FFF;
 border: 0;
-margin: 20px 0px 50px 130px;
+margin: 20px 0px 50px 315px;
 background: linear-gradient(#FF79DA,#9356DC);
+font-size: medium;
 }
 .Commander:hover {
   cursor: pointer;
@@ -346,7 +346,7 @@ color: #FFF;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-padding: 25px 0px 0px 10px;
+padding: 25px 0px 0px 5px;
 max-width: 100%;
 min-width: 320px;
 margin-top: 20px;
@@ -375,7 +375,7 @@ margin-top: 20px;
     }
     .fa-heart {
       position: absolute;
-      top: 57%;
+      top: 63%;
       right: 5%;
       font-size: 30px;
       z-index: 5;
@@ -405,10 +405,78 @@ margin-top: 20px;
   }
     .Commander{
         margin: 0% 40%;
+        padding: 28px 58px 28px 58px;
     }
 }
-@media screen and (min-width: 320px) and (max-width:375px){
+@media screen and (min-width: 355px) and (max-width:360px){
   .fa-heart {
     top: 61%;
+  }
+  .Commander{
+    padding: 15px 40px 15px 40px;
+   margin: 20px 0px 50px 100px;
+    }
+}
+@media screen and (min-width: 361px) and (max-width:376px){
+  .fa-heart {
+    top: 67%;
+  }
+  .Commander{
+  padding: 15px 40px 15px 40px;
+ margin: 20px 0px 50px 100px;
+  }
+}
+@media screen and (min-width: 377px) and (max-width:380px){
+  .fa-heart {
+    top: 53%;
+  }
+  .Commander{
+    padding: 15px 40px 15px 40px;
+   margin: 20px 0px 50px 100px;
+    }
+}
+@media screen and (min-width: 381px) and (max-width:395px){
+  .fa-heart {
+    top: 53%;
+  }
+  .Commander{
+    padding: 15px 40px 15px 40px;
+   margin: 20px 0px 50px 120px;
+    }
+}
+@media screen and (min-width: 396px) and (max-width:430px){
+  .fa-heart {
+    top: 49%;
+  }
+  .Commander{
+    padding: 15px 40px 15px 40px;
+   margin: 20px 0px 50px 130px;
+    }
+}
+@media screen and (min-width: 540px) and (max-width:750px){
+  .fa-heart {
+    top: 63%;
+  }
+  .Commander{
+    padding: 15px 40px 15px 40px;
+   margin: 20px 0px 50px 130px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:819px){
+  .fa-heart {
+    top: 46%;
+    font-size: 44px;
+  }
+  h1{
+    font-size:xxx-large;
+  }
+}
+@media screen and (min-width: 820px) and (max-width:850px){
+  .fa-heart {
+    top: 40%;
+    font-size: 44px;
+  }
+  h1{
+    font-size:xxx-large;
   }
 }
