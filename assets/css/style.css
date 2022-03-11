@@ -119,7 +119,7 @@ h1 {
 
 h4 {
   font-family: Shrikhand, sans-serif;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .Fonct {
@@ -319,12 +319,16 @@ h3 {
 
 .FooterRestau {
   display: flex;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .FooterPartenaire {
   display: flex;
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+.mentionmail{
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 1024px) {
