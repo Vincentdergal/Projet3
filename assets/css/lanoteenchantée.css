@@ -69,6 +69,7 @@ position: relative;
   opacity: 0;
   background-color: #99E2D0;
   margin-left: 25px;
+  margin-right: -70px;
   border-radius: 0 10px 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,6 +406,9 @@ margin-top: 20px;
     .Commander{
         margin: 0% 40%;
         padding: 28px 58px 28px 58px;
+    }
+    .div_prix{
+      margin-right: 0px;
     }
 }
 @media screen and (min-width: 355px) and (max-width:360px){
